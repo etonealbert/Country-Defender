@@ -1,0 +1,57 @@
+# Xcode
+#
+.DS_Store
+*.swp
+*.lock
+*.xcuserstate
+*.log
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.moved-aside
+DerivedData/
+Build/
+*.xcscmblueprint
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+# CocoaPods
+#
+# Pods/
+Pods/Target Support Files/
+Podfile.lock
+
+# SwiftLint
+#
+.swiftlint-report.json
+
+# Other common iOS ignores
+#
+*.hmap
+*.ipa
+*.mobileprovision
+*.provisionprofile
+*.gcno
+
+# Fastlane
+#
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Carthage
+#
+Carthage/Build/
+
+# Code Injection
+#
+injectedContent/
+
