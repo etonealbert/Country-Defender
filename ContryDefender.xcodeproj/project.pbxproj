@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5B25CB92AD21E4A00C6815B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CB82AD21E4A00C6815B /* AppDelegate.swift */; };
+		F5B25CBB2AD21E4A00C6815B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CBA2AD21E4A00C6815B /* SceneDelegate.swift */; };
+		F5B25CBD2AD21E4A00C6815B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CBC2AD21E4A00C6815B /* ViewController.swift */; };
+		F5B25CC02AD21E4A00C6815B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B25CBE2AD21E4A00C6815B /* Main.storyboard */; };
+		F5B25CC22AD21E4B00C6815B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B25CC12AD21E4B00C6815B /* Assets.xcassets */; };
+		F5B25CC52AD21E4B00C6815B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B25CC32AD21E4B00C6815B /* LaunchScreen.storyboard */; };
+		F5B25CD02AD21E4B00C6815B /* ContryDefenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CCF2AD21E4B00C6815B /* ContryDefenderTests.swift */; };
+		F5B25CDA2AD21E4B00C6815B /* ContryDefenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CD92AD21E4B00C6815B /* ContryDefenderUITests.swift */; };
+		F5B25CDC2AD21E4B00C6815B /* ContryDefenderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CDB2AD21E4B00C6815B /* ContryDefenderUITestsLaunchTests.swift */; };
+		F5B25CEA2AD2204F00C6815B /* Country.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B25CE92AD2204F00C6815B /* Country.storyboard */; };
+		F5B25CED2AD2208200C6815B /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CEC2AD2208200C6815B /* CountryModel.swift */; };
+		F5B25CEF2AD2209300C6815B /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CEE2AD2209300C6815B /* CountryViewModel.swift */; };
+		F5B25CF22AD220D400C6815B /* Pickup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B25CF12AD220D400C6815B /* Pickup.storyboard */; };
+		F5B25CF62AD2216200C6815B /* PickupSpawnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CF52AD2216200C6815B /* PickupSpawnManager.swift */; };
+		F5B25CF82AD2217200C6815B /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CF72AD2217200C6815B /* CollisionManager.swift */; };
+		F5B25CFA2AD2218400C6815B /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CF92AD2218400C6815B /* SoundManager.swift */; };
+		F5B25D002AD2220200C6815B /* ColorSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CFF2AD2220200C6815B /* ColorSystem.swift */; };
+		F5B25D032AD2223800C6815B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25D022AD2223800C6815B /* Logger.swift */; };
+		F5B25D062AD2228700C6815B /* ErrorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25D052AD2228700C6815B /* ErrorLabel.swift */; };
+		F5B25D092AD222D900C6815B /* PickupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25D082AD222D900C6815B /* PickupViewModel.swift */; };
+		F5B25D0B2AD222EF00C6815B /* PickupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25D0A2AD222EF00C6815B /* PickupModel.swift */; };
+		F5B25D0D2AD2231000C6815B /* PickupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25D0C2AD2231000C6815B /* PickupView.swift */; };
+		F5B25D102AD2236000C6815B /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25D0F2AD2236000C6815B /* GameOverView.swift */; };
+		F5B25D132AD2239800C6815B /* GameOverView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B25D122AD2239800C6815B /* GameOverView.storyboard */; };
+		F5B25D162AD223D300C6815B /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B25D152AD223D300C6815B /* SplashScreen.storyboard */; };
+		F5B25D192AD2240900C6815B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25D182AD2240900C6815B /* SplashScreenView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5B25CCC2AD21E4B00C6815B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5B25CAD2AD21E4A00C6815B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5B25CB42AD21E4A00C6815B;
+			remoteInfo = ContryDefender;
+		};
+		F5B25CD62AD21E4B00C6815B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5B25CAD2AD21E4A00C6815B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5B25CB42AD21E4A00C6815B;
+			remoteInfo = ContryDefender;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5B25CB52AD21E4A00C6815B /* ContryDefender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContryDefender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B25CB82AD21E4A00C6815B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5B25CBA2AD21E4A00C6815B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F5B25CBC2AD21E4A00C6815B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5B25CBF2AD21E4A00C6815B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5B25CC12AD21E4B00C6815B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5B25CC42AD21E4B00C6815B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5B25CC62AD21E4B00C6815B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5B25CCB2AD21E4B00C6815B /* ContryDefenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContryDefenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B25CCF2AD21E4B00C6815B /* ContryDefenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryDefenderTests.swift; sourceTree = "<group>"; };
+		F5B25CD52AD21E4B00C6815B /* ContryDefenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContryDefenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B25CD92AD21E4B00C6815B /* ContryDefenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryDefenderUITests.swift; sourceTree = "<group>"; };
+		F5B25CDB2AD21E4B00C6815B /* ContryDefenderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContryDefenderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5B25CE92AD2204F00C6815B /* Country.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Country.storyboard; sourceTree = "<group>"; };
+		F5B25CEC2AD2208200C6815B /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		F5B25CEE2AD2209300C6815B /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
+		F5B25CF12AD220D400C6815B /* Pickup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pickup.storyboard; sourceTree = "<group>"; };
+		F5B25CF52AD2216200C6815B /* PickupSpawnManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupSpawnManager.swift; sourceTree = "<group>"; };
+		F5B25CF72AD2217200C6815B /* CollisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
+		F5B25CF92AD2218400C6815B /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		F5B25CFF2AD2220200C6815B /* ColorSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSystem.swift; sourceTree = "<group>"; };
+		F5B25D022AD2223800C6815B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F5B25D052AD2228700C6815B /* ErrorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLabel.swift; sourceTree = "<group>"; };
+		F5B25D082AD222D900C6815B /* PickupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupViewModel.swift; sourceTree = "<group>"; };
+		F5B25D0A2AD222EF00C6815B /* PickupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupModel.swift; sourceTree = "<group>"; };
+		F5B25D0C2AD2231000C6815B /* PickupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupView.swift; sourceTree = "<group>"; };
+		F5B25D0F2AD2236000C6815B /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		F5B25D122AD2239800C6815B /* GameOverView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameOverView.storyboard; sourceTree = "<group>"; };
+		F5B25D152AD223D300C6815B /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		F5B25D182AD2240900C6815B /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5B25CB22AD21E4A00C6815B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B25CC82AD21E4B00C6815B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B25CD22AD21E4B00C6815B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5B25CAC2AD21E4A00C6815B = {
+			isa = PBXGroup;
+			children = (
+				F5B25CB72AD21E4A00C6815B /* ContryDefender */,
+				F5B25CCE2AD21E4B00C6815B /* ContryDefenderTests */,
+				F5B25CD82AD21E4B00C6815B /* ContryDefenderUITests */,
+				F5B25CB62AD21E4A00C6815B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5B25CB62AD21E4A00C6815B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25CB52AD21E4A00C6815B /* ContryDefender.app */,
+				F5B25CCB2AD21E4B00C6815B /* ContryDefenderTests.xctest */,
+				F5B25CD52AD21E4B00C6815B /* ContryDefenderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5B25CB72AD21E4A00C6815B /* ContryDefender */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25CF32AD2210400C6815B /* Scenes */,
+				F5B25CF42AD2212A00C6815B /* Managers */,
+				F5B25D012AD2222200C6815B /* Utility */,
+				F5B25CFE2AD221CC00C6815B /* Design */,
+				F5B25CB82AD21E4A00C6815B /* AppDelegate.swift */,
+				F5B25CBA2AD21E4A00C6815B /* SceneDelegate.swift */,
+				F5B25CBC2AD21E4A00C6815B /* ViewController.swift */,
+				F5B25CBE2AD21E4A00C6815B /* Main.storyboard */,
+				F5B25CC12AD21E4B00C6815B /* Assets.xcassets */,
+				F5B25CC32AD21E4B00C6815B /* LaunchScreen.storyboard */,
+				F5B25CC62AD21E4B00C6815B /* Info.plist */,
+			);
+			path = ContryDefender;
+			sourceTree = "<group>";
+		};
+		F5B25CCE2AD21E4B00C6815B /* ContryDefenderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25CCF2AD21E4B00C6815B /* ContryDefenderTests.swift */,
+			);
+			path = ContryDefenderTests;
+			sourceTree = "<group>";
+		};
+		F5B25CD82AD21E4B00C6815B /* ContryDefenderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25CD92AD21E4B00C6815B /* ContryDefenderUITests.swift */,
+				F5B25CDB2AD21E4B00C6815B /* ContryDefenderUITestsLaunchTests.swift */,
+			);
+			path = ContryDefenderUITests;
+			sourceTree = "<group>";
+		};
+		F5B25CE82AD2202A00C6815B /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25CEB2AD2206E00C6815B /* CountryComponents */,
+				F5B25CE92AD2204F00C6815B /* Country.storyboard */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		F5B25CEB2AD2206E00C6815B /* CountryComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25CEC2AD2208200C6815B /* CountryModel.swift */,
+				F5B25CEE2AD2209300C6815B /* CountryViewModel.swift */,
+			);
+			path = CountryComponents;
+			sourceTree = "<group>";
+		};
+		F5B25CF02AD220AF00C6815B /* Pickup */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25D072AD222C200C6815B /* PickupComponents */,
+				F5B25CF12AD220D400C6815B /* Pickup.storyboard */,
+			);
+			path = Pickup;
+			sourceTree = "<group>";
+		};
+		F5B25CF32AD2210400C6815B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25D142AD223B500C6815B /* SplashScreen */,
+				F5B25D0E2AD2233100C6815B /* GameOver */,
+				F5B25CE82AD2202A00C6815B /* Country */,
+				F5B25CF02AD220AF00C6815B /* Pickup */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F5B25CF42AD2212A00C6815B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25CF52AD2216200C6815B /* PickupSpawnManager.swift */,
+				F5B25CF72AD2217200C6815B /* CollisionManager.swift */,
+				F5B25CF92AD2218400C6815B /* SoundManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F5B25CFE2AD221CC00C6815B /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25D042AD2225100C6815B /* CommonViews */,
+				F5B25CFF2AD2220200C6815B /* ColorSystem.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		F5B25D012AD2222200C6815B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25D022AD2223800C6815B /* Logger.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F5B25D042AD2225100C6815B /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25D052AD2228700C6815B /* ErrorLabel.swift */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		F5B25D072AD222C200C6815B /* PickupComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25D082AD222D900C6815B /* PickupViewModel.swift */,
+				F5B25D0A2AD222EF00C6815B /* PickupModel.swift */,
+				F5B25D0C2AD2231000C6815B /* PickupView.swift */,
+			);
+			path = PickupComponents;
+			sourceTree = "<group>";
+		};
+		F5B25D0E2AD2233100C6815B /* GameOver */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25D122AD2239800C6815B /* GameOverView.storyboard */,
+				F5B25D112AD2237C00C6815B /* GameOverComponents */,
+			);
+			path = GameOver;
+			sourceTree = "<group>";
+		};
+		F5B25D112AD2237C00C6815B /* GameOverComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25D0F2AD2236000C6815B /* GameOverView.swift */,
+			);
+			path = GameOverComponents;
+			sourceTree = "<group>";
+		};
+		F5B25D142AD223B500C6815B /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25D172AD223E600C6815B /* SplashScreenComponents */,
+				F5B25D152AD223D300C6815B /* SplashScreen.storyboard */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		F5B25D172AD223E600C6815B /* SplashScreenComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F5B25D182AD2240900C6815B /* SplashScreenView.swift */,
+			);
+			path = SplashScreenComponents;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5B25CB42AD21E4A00C6815B /* ContryDefender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B25CDF2AD21E4B00C6815B /* Build configuration list for PBXNativeTarget "ContryDefender" */;
+			buildPhases = (
+				F5B25CB12AD21E4A00C6815B /* Sources */,
+				F5B25CB22AD21E4A00C6815B /* Frameworks */,
+				F5B25CB32AD21E4A00C6815B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContryDefender;
+			productName = ContryDefender;
+			productReference = F5B25CB52AD21E4A00C6815B /* ContryDefender.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5B25CCA2AD21E4B00C6815B /* ContryDefenderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B25CE22AD21E4B00C6815B /* Build configuration list for PBXNativeTarget "ContryDefenderTests" */;
+			buildPhases = (
+				F5B25CC72AD21E4B00C6815B /* Sources */,
+				F5B25CC82AD21E4B00C6815B /* Frameworks */,
+				F5B25CC92AD21E4B00C6815B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5B25CCD2AD21E4B00C6815B /* PBXTargetDependency */,
+			);
+			name = ContryDefenderTests;
+			productName = ContryDefenderTests;
+			productReference = F5B25CCB2AD21E4B00C6815B /* ContryDefenderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5B25CD42AD21E4B00C6815B /* ContryDefenderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B25CE52AD21E4B00C6815B /* Build configuration list for PBXNativeTarget "ContryDefenderUITests" */;
+			buildPhases = (
+				F5B25CD12AD21E4B00C6815B /* Sources */,
+				F5B25CD22AD21E4B00C6815B /* Frameworks */,
+				F5B25CD32AD21E4B00C6815B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5B25CD72AD21E4B00C6815B /* PBXTargetDependency */,
+			);
+			name = ContryDefenderUITests;
+			productName = ContryDefenderUITests;
+			productReference = F5B25CD52AD21E4B00C6815B /* ContryDefenderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5B25CAD2AD21E4A00C6815B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F5B25CB42AD21E4A00C6815B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					F5B25CCA2AD21E4B00C6815B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F5B25CB42AD21E4A00C6815B;
+					};
+					F5B25CD42AD21E4B00C6815B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F5B25CB42AD21E4A00C6815B;
+					};
+				};
+			};
+			buildConfigurationList = F5B25CB02AD21E4A00C6815B /* Build configuration list for PBXProject "ContryDefender" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5B25CAC2AD21E4A00C6815B;
+			productRefGroup = F5B25CB62AD21E4A00C6815B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5B25CB42AD21E4A00C6815B /* ContryDefender */,
+				F5B25CCA2AD21E4B00C6815B /* ContryDefenderTests */,
+				F5B25CD42AD21E4B00C6815B /* ContryDefenderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5B25CB32AD21E4A00C6815B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B25CC52AD21E4B00C6815B /* LaunchScreen.storyboard in Resources */,
+				F5B25CEA2AD2204F00C6815B /* Country.storyboard in Resources */,
+				F5B25CC22AD21E4B00C6815B /* Assets.xcassets in Resources */,
+				F5B25CF22AD220D400C6815B /* Pickup.storyboard in Resources */,
+				F5B25CC02AD21E4A00C6815B /* Main.storyboard in Resources */,
+				F5B25D132AD2239800C6815B /* GameOverView.storyboard in Resources */,
+				F5B25D162AD223D300C6815B /* SplashScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B25CC92AD21E4B00C6815B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B25CD32AD21E4B00C6815B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5B25CB12AD21E4A00C6815B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B25CBD2AD21E4A00C6815B /* ViewController.swift in Sources */,
+				F5B25D0B2AD222EF00C6815B /* PickupModel.swift in Sources */,
+				F5B25D062AD2228700C6815B /* ErrorLabel.swift in Sources */,
+				F5B25CFA2AD2218400C6815B /* SoundManager.swift in Sources */,
+				F5B25CB92AD21E4A00C6815B /* AppDelegate.swift in Sources */,
+				F5B25CF82AD2217200C6815B /* CollisionManager.swift in Sources */,
+				F5B25D002AD2220200C6815B /* ColorSystem.swift in Sources */,
+				F5B25D192AD2240900C6815B /* SplashScreenView.swift in Sources */,
+				F5B25D032AD2223800C6815B /* Logger.swift in Sources */,
+				F5B25D0D2AD2231000C6815B /* PickupView.swift in Sources */,
+				F5B25CED2AD2208200C6815B /* CountryModel.swift in Sources */,
+				F5B25D102AD2236000C6815B /* GameOverView.swift in Sources */,
+				F5B25D092AD222D900C6815B /* PickupViewModel.swift in Sources */,
+				F5B25CF62AD2216200C6815B /* PickupSpawnManager.swift in Sources */,
+				F5B25CBB2AD21E4A00C6815B /* SceneDelegate.swift in Sources */,
+				F5B25CEF2AD2209300C6815B /* CountryViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B25CC72AD21E4B00C6815B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B25CD02AD21E4B00C6815B /* ContryDefenderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B25CD12AD21E4B00C6815B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B25CDC2AD21E4B00C6815B /* ContryDefenderUITestsLaunchTests.swift in Sources */,
+				F5B25CDA2AD21E4B00C6815B /* ContryDefenderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5B25CCD2AD21E4B00C6815B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5B25CB42AD21E4A00C6815B /* ContryDefender */;
+			targetProxy = F5B25CCC2AD21E4B00C6815B /* PBXContainerItemProxy */;
+		};
+		F5B25CD72AD21E4B00C6815B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5B25CB42AD21E4A00C6815B /* ContryDefender */;
+			targetProxy = F5B25CD62AD21E4B00C6815B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5B25CBE2AD21E4A00C6815B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5B25CBF2AD21E4A00C6815B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5B25CC32AD21E4B00C6815B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5B25CC42AD21E4B00C6815B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5B25CDD2AD21E4B00C6815B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5B25CDE2AD21E4B00C6815B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5B25CE02AD21E4B00C6815B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WV5765T6M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContryDefender/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrydefender.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5B25CE12AD21E4B00C6815B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WV5765T6M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ContryDefender/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrydefender.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5B25CE32AD21E4B00C6815B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WV5765T6M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrydefender.ios.ContryDefenderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContryDefender.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ContryDefender";
+			};
+			name = Debug;
+		};
+		F5B25CE42AD21E4B00C6815B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WV5765T6M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrydefender.ios.ContryDefenderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContryDefender.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ContryDefender";
+			};
+			name = Release;
+		};
+		F5B25CE62AD21E4B00C6815B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WV5765T6M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrydefender.ios.ContryDefenderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ContryDefender;
+			};
+			name = Debug;
+		};
+		F5B25CE72AD21E4B00C6815B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WV5765T6M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrydefender.ios.ContryDefenderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ContryDefender;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5B25CB02AD21E4A00C6815B /* Build configuration list for PBXProject "ContryDefender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B25CDD2AD21E4B00C6815B /* Debug */,
+				F5B25CDE2AD21E4B00C6815B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5B25CDF2AD21E4B00C6815B /* Build configuration list for PBXNativeTarget "ContryDefender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B25CE02AD21E4B00C6815B /* Debug */,
+				F5B25CE12AD21E4B00C6815B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5B25CE22AD21E4B00C6815B /* Build configuration list for PBXNativeTarget "ContryDefenderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B25CE32AD21E4B00C6815B /* Debug */,
+				F5B25CE42AD21E4B00C6815B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5B25CE52AD21E4B00C6815B /* Build configuration list for PBXNativeTarget "ContryDefenderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B25CE62AD21E4B00C6815B /* Debug */,
+				F5B25CE72AD21E4B00C6815B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5B25CAD2AD21E4A00C6815B /* Project object */;
+}
