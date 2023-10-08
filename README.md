@@ -1,13 +1,34 @@
+
 # Country Defender iOS
 
-## FutureFrameworks
-These are "frameworks" that should eventually be decoupled from the application, compiled as SPM packages, and loaded into the app that way. 
+![App icon](images/app_icon.png)
 
-Until they're completed, I think it will be better for development speed to keep them in the project. Once they are feature complete I believe we should transfer to independent repos and load as packages. Packages have the benefit of reducing build times.
+## Description
+Defend a country at the center of your screen from invaders in pickups. Swiftly tap on these vehicles to detonate them before they reach the country's borders. If they do, parts of the nation vanish. As levels progress, the pickups increase in speed and numbers. Test your reflexes and strategy in this fast-paced mobile game.
 
-Country Defender specific code should be kept out of these frameworks. They are meant to be generic and customizable to any application. 
+## Frameworks & Technologies Used
 
----
+- UIKit
+- Core Graphics
+- SpriteKit
+- Core Animation
+- MVVM Architecture
+
+## Getting Started
+
+1. **Setup**: Ensure you have Xcode installed and updated to the latest version.
+2. **Clone the repository**: `git clone [https://github.com/etonealbert/Country-Defender.git]`
+3. **Open the project**: Navigate to the project directory and open the `.xcodeproj` or `.xcworkspace` file.
+4. **Install necessary dependencies**: If the project uses CocoaPods or any other dependency manager, follow the instructions to install them.
+5. **Run the app**: Select your preferred simulator or device and press the run button.
+
+## Contributing
+
+If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request. Contributions are welcome!
+
+## License
+This project is licensed under the [MIT License](LICENSE.md).
+
 ## Testing:
 Unit and UI tests should be written as part of tickets. Consideration of testing while programming can help lead to a cleaner and more intentional codebase. We should do our best to maintain a minimum 80% code coverage.
 
