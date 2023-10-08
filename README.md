@@ -1,7 +1,7 @@
 
 # Country Defender iOS
 
-<img src="images/app_icon.png" width="100" height="100" alt="App icon">
+<img src="images/app_icon.png" width="250" height="250" alt="App icon">
 
 ## Description
 Defend a country at the center of your screen from invaders in pickups. Swiftly tap on these vehicles to detonate them before they reach the country's borders. If they do, parts of the nation vanish. As levels progress, the pickups increase in speed and numbers. Test your reflexes and strategy in this fast-paced mobile game.
@@ -17,10 +17,9 @@ Defend a country at the center of your screen from invaders in pickups. Swiftly 
 ## Getting Started
 
 1. **Setup**: Ensure you have Xcode installed and updated to the latest version.
-2. **Clone the repository**: `git clone [https://github.com/etonealbert/Country-Defender.git]`
-3. **Open the project**: Navigate to the project directory and open the `.xcodeproj` or `.xcworkspace` file.
-4. **Install necessary dependencies**: If the project uses CocoaPods or any other dependency manager, follow the instructions to install them.
-5. **Run the app**: Select your preferred simulator or device and press the run button.
+2. **Clone the repository**: `git clone https://github.com/etonealbert/Country-Defender.git`
+3. **Open the project**: Navigate to the project directory and open the `.xcworkspace` file.
+4. **Install necessary dependencies**: Project uses CocoaPods follow the instructions to install them.
 
 ## Contributing
 
