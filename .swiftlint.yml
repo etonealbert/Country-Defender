@@ -1,0 +1,39 @@
+disabled_rules:
+  - nesting
+  - file_length
+  - type_body_length
+  - cyclomatic_complexity
+  - trailing_whitespace  
+  - vertical_whitespace
+  - trailing_newline
+line_length:
+  ignores_function_declarations: true
+  ignores_comments: true
+
+identifier_name:
+  allowed_symbols:
+    "_"
+  excluded:
+    - id
+    - to
+    - go
+    - qa
+    - x
+    - y
+    - vc
+    - vm
+    
+custom_rules:
+  custom_explicit_type_interface:
+    included: 
+      - '.*\.swift'
+    name: Explicit Type Interface
+    regex: '(?<!(if|guard) )(((let|var) +[a-zA-Z0-9]+) += *[a-zA-Z0-9: \(\)]*)'
+    # Experiencing false positives with chained 'guard let' follow by 'else { return }' on a new line. Ex:
+    # guard let optionalOne = optionalOne,
+    #       let optionalTwo = optionalTwo
+    # else { return }
+    # Also experience false positive in commented code, ie: // let test = "test"
+    # regex: '(?<!(if|guard) )(((let|var) +[a-zA-Z0-9]+) += *[a-zA-Z0-9: \(\)]*)$(?<!([\n\r]?[ \t]*else { return }))'
+    message: Properties should have a type interface.
+    severity: warning
