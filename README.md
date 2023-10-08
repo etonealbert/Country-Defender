@@ -1,7 +1,7 @@
 
 # Country Defender iOS
 
-![App icon](images/app_icon.png)
+<img src="images/app_icon.png" width="100" height="100" alt="App icon">
 
 ## Description
 Defend a country at the center of your screen from invaders in pickups. Swiftly tap on these vehicles to detonate them before they reach the country's borders. If they do, parts of the nation vanish. As levels progress, the pickups increase in speed and numbers. Test your reflexes and strategy in this fast-paced mobile game.
@@ -54,3 +54,9 @@ SwiftLint will help maintain a consistent style across the codebase. Some of the
 - Hacking With Swift: Coordinators Intro - https://www.youtube.com/watch?v=7HgbcTqxoN4
 - Hacking With Swift: Advanced Coordinator Techniques - https://www.youtube.com/watch?v=ueByb0MBMQ4
 
+
+## Developers
+
+- **Albert Lukmanov** - *Lead Developer* - [albert.lukmanov99@gmail.com](mailto:albert.lukmanov99@gmail.com) - [GitHub Profile](https://github.com/etonealbert)
+- **Gabriel Zdravkovici** - *Software Engineer* - [gabriel.zdravkovici313@gmail.com](mailto:gabriel.zdravkovici313@gmail.com) - [GitHub Profile](https://github.com/Gabitosz)
+- **Makar Koblia** - *Software Engineer* - [kobliamakar@gmail.com](mailto:kobliamakar@gmail.com) - [GitHub Profile](https://github.com/Makarushkaa)
