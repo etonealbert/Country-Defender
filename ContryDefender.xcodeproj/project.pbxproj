@@ -12,6 +12,13 @@
 		8448933C2AD427A000EF8FD2 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448933B2AD4279F00EF8FD2 /* SplashPresenter.swift */; };
 		844893472AD42B2200EF8FD2 /* NSLayoutConstraint + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844893462AD42B2200EF8FD2 /* NSLayoutConstraint + Extensions.swift */; };
 		868E6ECD601A75B915E5DF16 /* Pods_ContryDefenderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFE1EE8FA5674D4E9FA42DC /* Pods_ContryDefenderTests.framework */; };
+		F57F3D0A2AD55A10002C9EC9 /* Playground.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57F3D002AD55A10002C9EC9 /* Playground.storyboard */; };
+		F57F3D0B2AD55A10002C9EC9 /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F3D022AD55A10002C9EC9 /* PlaygroundViewController.swift */; };
+		F57F3D0C2AD55A10002C9EC9 /* StartPlaygroundContainerViewControlle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F3D032AD55A10002C9EC9 /* StartPlaygroundContainerViewControlle.swift */; };
+		F57F3D0D2AD55A10002C9EC9 /* StartViewButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F3D062AD55A10002C9EC9 /* StartViewButtons.swift */; };
+		F57F3D0E2AD55A10002C9EC9 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F3D072AD55A10002C9EC9 /* StartViewModel.swift */; };
+		F57F3D0F2AD55A10002C9EC9 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F3D082AD55A10002C9EC9 /* StartViewController.swift */; };
+		F57F3D102AD55A10002C9EC9 /* StartView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57F3D092AD55A10002C9EC9 /* StartView.storyboard */; };
 		F5B25CB92AD21E4A00C6815B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CB82AD21E4A00C6815B /* AppDelegate.swift */; };
 		F5B25CBB2AD21E4A00C6815B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CBA2AD21E4A00C6815B /* SceneDelegate.swift */; };
 		F5B25CBD2AD21E4A00C6815B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B25CBC2AD21E4A00C6815B /* ViewController.swift */; };
@@ -68,6 +75,13 @@
 		8448933B2AD4279F00EF8FD2 /* SplashPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		844893462AD42B2200EF8FD2 /* NSLayoutConstraint + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint + Extensions.swift"; sourceTree = "<group>"; };
 		DB31206C0C11931F925A05AD /* Pods_ContryDefender_ContryDefenderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContryDefender_ContryDefenderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57F3D002AD55A10002C9EC9 /* Playground.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Playground.storyboard; sourceTree = "<group>"; };
+		F57F3D022AD55A10002C9EC9 /* PlaygroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
+		F57F3D032AD55A10002C9EC9 /* StartPlaygroundContainerViewControlle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPlaygroundContainerViewControlle.swift; sourceTree = "<group>"; };
+		F57F3D062AD55A10002C9EC9 /* StartViewButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewButtons.swift; sourceTree = "<group>"; };
+		F57F3D072AD55A10002C9EC9 /* StartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
+		F57F3D082AD55A10002C9EC9 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		F57F3D092AD55A10002C9EC9 /* StartView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StartView.storyboard; sourceTree = "<group>"; };
 		F5B25CB52AD21E4A00C6815B /* ContryDefender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContryDefender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B25CB82AD21E4A00C6815B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5B25CBA2AD21E4A00C6815B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +174,52 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F57F3CFE2AD55A10002C9EC9 /* Start+Playground */ = {
+			isa = PBXGroup;
+			children = (
+				F57F3CFF2AD55A10002C9EC9 /* Playground */,
+				F57F3D032AD55A10002C9EC9 /* StartPlaygroundContainerViewControlle.swift */,
+				F57F3D042AD55A10002C9EC9 /* Start */,
+			);
+			path = "Start+Playground";
+			sourceTree = "<group>";
+		};
+		F57F3CFF2AD55A10002C9EC9 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				F57F3D002AD55A10002C9EC9 /* Playground.storyboard */,
+				F57F3D012AD55A10002C9EC9 /* PlaygroundComponents */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		F57F3D012AD55A10002C9EC9 /* PlaygroundComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F57F3D022AD55A10002C9EC9 /* PlaygroundViewController.swift */,
+			);
+			path = PlaygroundComponents;
+			sourceTree = "<group>";
+		};
+		F57F3D042AD55A10002C9EC9 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				F57F3D052AD55A10002C9EC9 /* StartComponents */,
+				F57F3D092AD55A10002C9EC9 /* StartView.storyboard */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		F57F3D052AD55A10002C9EC9 /* StartComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F57F3D062AD55A10002C9EC9 /* StartViewButtons.swift */,
+				F57F3D072AD55A10002C9EC9 /* StartViewModel.swift */,
+				F57F3D082AD55A10002C9EC9 /* StartViewController.swift */,
+			);
+			path = StartComponents;
+			sourceTree = "<group>";
+		};
 		F5B25CAC2AD21E4A00C6815B = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +308,7 @@
 		F5B25CF32AD2210400C6815B /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				F57F3CFE2AD55A10002C9EC9 /* Start+Playground */,
 				F5B25D142AD223B500C6815B /* SplashScreen */,
 				F5B25D0E2AD2233100C6815B /* GameOver */,
 				F5B25CE82AD2202A00C6815B /* Country */,
@@ -445,6 +506,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5B25CC52AD21E4B00C6815B /* LaunchScreen.storyboard in Resources */,
+				F57F3D102AD55A10002C9EC9 /* StartView.storyboard in Resources */,
+				F57F3D0A2AD55A10002C9EC9 /* Playground.storyboard in Resources */,
 				F5B25CEA2AD2204F00C6815B /* Country.storyboard in Resources */,
 				F5B25CC22AD21E4B00C6815B /* Assets.xcassets in Resources */,
 				F5B25CF22AD220D400C6815B /* Pickup.storyboard in Resources */,
@@ -565,14 +628,19 @@
 				F5B25CBD2AD21E4A00C6815B /* ViewController.swift in Sources */,
 				F5B25D0B2AD222EF00C6815B /* PickupModel.swift in Sources */,
 				F5B25D062AD2228700C6815B /* ErrorLabel.swift in Sources */,
+				F57F3D0D2AD55A10002C9EC9 /* StartViewButtons.swift in Sources */,
 				F5B25CFA2AD2218400C6815B /* SoundManager.swift in Sources */,
+				F57F3D0E2AD55A10002C9EC9 /* StartViewModel.swift in Sources */,
 				F5B25CB92AD21E4A00C6815B /* AppDelegate.swift in Sources */,
 				F5B25CF82AD2217200C6815B /* CollisionManager.swift in Sources */,
+				F57F3D0F2AD55A10002C9EC9 /* StartViewController.swift in Sources */,
 				F5B25D002AD2220200C6815B /* ColorSystem.swift in Sources */,
 				F5B25D192AD2240900C6815B /* SplashScreenView.swift in Sources */,
 				F5B25D032AD2223800C6815B /* Logger.swift in Sources */,
 				844893472AD42B2200EF8FD2 /* NSLayoutConstraint + Extensions.swift in Sources */,
+				F57F3D0B2AD55A10002C9EC9 /* PlaygroundViewController.swift in Sources */,
 				F5B25D0D2AD2231000C6815B /* PickupView.swift in Sources */,
+				F57F3D0C2AD55A10002C9EC9 /* StartPlaygroundContainerViewControlle.swift in Sources */,
 				F5B25CED2AD2208200C6815B /* CountryModel.swift in Sources */,
 				8448933C2AD427A000EF8FD2 /* SplashPresenter.swift in Sources */,
 				F5B25D102AD2236000C6815B /* GameOverView.swift in Sources */,
