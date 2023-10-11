@@ -49,9 +49,14 @@ final class SplashPresenter: SplashPresenterDescription {
         splashViewController?.creditsLabel.alpha = 0
         UIView.animate(withDuration: 1) {
             // Animation finish point
-            guard let oldConstraintPosition = splashViewController?.labelCenterYConstraint.multiplier else { return }
-            let newConstraintPosition = splashViewController?.labelCenterYConstraint.setMultiplier(oldConstraintPosition * 0.85)
-            splashViewController?.labelCenterYConstraint = newConstraintPosition
+            guard let oldLabelCenterYConstraint = splashViewController?.labelCenterYConstraint.multiplier else { return }
+            let newLabelCenterYConstraint = splashViewController?.labelCenterYConstraint.setMultiplier(oldLabelCenterYConstraint * 0.85)
+            
+            guard let oldScaleLogoConstraint = splashViewController?.scaleLogoConstraint.multiplier else { return }
+            let newScaleLogoConstraint = splashViewController?.scaleLogoConstraint.setMultiplier(oldScaleLogoConstraint * 0.85)
+            
+            splashViewController?.labelCenterYConstraint = newLabelCenterYConstraint
+            splashViewController?.scaleLogoConstraint = newScaleLogoConstraint
             splashViewController?.view.layoutIfNeeded()
             splashViewController?.creditsLabel.alpha = 1
         }

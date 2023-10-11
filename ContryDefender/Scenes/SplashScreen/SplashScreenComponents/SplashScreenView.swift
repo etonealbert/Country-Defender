@@ -11,6 +11,7 @@ final class SplashScreenView: UIViewController {
     
     @IBOutlet weak var creditsLabel: UILabel!
     @IBOutlet weak var labelCenterYConstraint: NSLayoutConstraint!
+    @IBOutlet weak var scaleLogoConstraint: NSLayoutConstraint!
     
     var credits: String?
     override func viewDidLoad() {
