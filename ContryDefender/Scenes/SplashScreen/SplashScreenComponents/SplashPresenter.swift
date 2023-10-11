@@ -49,7 +49,8 @@ final class SplashPresenter: SplashPresenterDescription {
         splashViewController?.creditsLabel.alpha = 0
         UIView.animate(withDuration: 1) {
             // Animation finish point
-            let newConstraintPosition = splashViewController?.labelCenterYConstraint.setMultiplier(1.5)
+            guard let oldConstraintPosition = splashViewController?.labelCenterYConstraint.multiplier else { return }
+            let newConstraintPosition = splashViewController?.labelCenterYConstraint.setMultiplier(oldConstraintPosition * 0.85)
             splashViewController?.labelCenterYConstraint = newConstraintPosition
             splashViewController?.view.layoutIfNeeded()
             splashViewController?.creditsLabel.alpha = 1
