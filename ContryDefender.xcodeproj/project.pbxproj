@@ -11,6 +11,9 @@
 		5E3ED869FDF1631EA6CCB4C6 /* Pods_ContryDefender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C95944CE622841835E47493 /* Pods_ContryDefender.framework */; };
 		8448933C2AD427A000EF8FD2 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448933B2AD4279F00EF8FD2 /* SplashPresenter.swift */; };
 		844893472AD42B2200EF8FD2 /* NSLayoutConstraint + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844893462AD42B2200EF8FD2 /* NSLayoutConstraint + Extensions.swift */; };
+		8485EEEF2ADC64C300650698 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485EEEE2ADC64C300650698 /* Coordinator.swift */; };
+		8485EEF12ADC67BE00650698 /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485EEF02ADC67BE00650698 /* StartCoordinator.swift */; };
+		8485EEF32ADC6DEA00650698 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485EEF22ADC6DEA00650698 /* AppCoordinator.swift */; };
 		868E6ECD601A75B915E5DF16 /* Pods_ContryDefenderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFE1EE8FA5674D4E9FA42DC /* Pods_ContryDefenderTests.framework */; };
 		F57F3D0A2AD55A10002C9EC9 /* Playground.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57F3D002AD55A10002C9EC9 /* Playground.storyboard */; };
 		F57F3D0B2AD55A10002C9EC9 /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F3D022AD55A10002C9EC9 /* PlaygroundViewController.swift */; };
@@ -74,6 +77,9 @@
 		7C95944CE622841835E47493 /* Pods_ContryDefender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContryDefender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448933B2AD4279F00EF8FD2 /* SplashPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		844893462AD42B2200EF8FD2 /* NSLayoutConstraint + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint + Extensions.swift"; sourceTree = "<group>"; };
+		8485EEEE2ADC64C300650698 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8485EEF02ADC67BE00650698 /* StartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCoordinator.swift; sourceTree = "<group>"; };
+		8485EEF22ADC6DEA00650698 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		DB31206C0C11931F925A05AD /* Pods_ContryDefender_ContryDefenderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContryDefender_ContryDefenderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57F3D002AD55A10002C9EC9 /* Playground.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Playground.storyboard; sourceTree = "<group>"; };
 		F57F3D022AD55A10002C9EC9 /* PlaygroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +222,7 @@
 				F57F3D062AD55A10002C9EC9 /* StartViewButtons.swift */,
 				F57F3D072AD55A10002C9EC9 /* StartViewModel.swift */,
 				F57F3D082AD55A10002C9EC9 /* StartViewController.swift */,
+				8485EEF02ADC67BE00650698 /* StartCoordinator.swift */,
 			);
 			path = StartComponents;
 			sourceTree = "<group>";
@@ -252,6 +259,7 @@
 				844893452AD428FD00EF8FD2 /* Extensions */,
 				F5B25CB82AD21E4A00C6815B /* AppDelegate.swift */,
 				F5B25CBA2AD21E4A00C6815B /* SceneDelegate.swift */,
+				8485EEF22ADC6DEA00650698 /* AppCoordinator.swift */,
 				F5B25CBC2AD21E4A00C6815B /* ViewController.swift */,
 				F5B25CBE2AD21E4A00C6815B /* Main.storyboard */,
 				F5B25CC12AD21E4B00C6815B /* Assets.xcassets */,
@@ -340,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				F5B25D022AD2223800C6815B /* Logger.swift */,
+				8485EEEE2ADC64C300650698 /* Coordinator.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -627,12 +636,14 @@
 			files = (
 				F5B25CBD2AD21E4A00C6815B /* ViewController.swift in Sources */,
 				F5B25D0B2AD222EF00C6815B /* PickupModel.swift in Sources */,
+				8485EEF32ADC6DEA00650698 /* AppCoordinator.swift in Sources */,
 				F5B25D062AD2228700C6815B /* ErrorLabel.swift in Sources */,
 				F57F3D0D2AD55A10002C9EC9 /* StartViewButtons.swift in Sources */,
 				F5B25CFA2AD2218400C6815B /* SoundManager.swift in Sources */,
 				F57F3D0E2AD55A10002C9EC9 /* StartViewModel.swift in Sources */,
 				F5B25CB92AD21E4A00C6815B /* AppDelegate.swift in Sources */,
 				F5B25CF82AD2217200C6815B /* CollisionManager.swift in Sources */,
+				8485EEEF2ADC64C300650698 /* Coordinator.swift in Sources */,
 				F57F3D0F2AD55A10002C9EC9 /* StartViewController.swift in Sources */,
 				F5B25D002AD2220200C6815B /* ColorSystem.swift in Sources */,
 				F5B25D192AD2240900C6815B /* SplashScreenView.swift in Sources */,
@@ -641,6 +652,7 @@
 				F57F3D0B2AD55A10002C9EC9 /* PlaygroundViewController.swift in Sources */,
 				F5B25D0D2AD2231000C6815B /* PickupView.swift in Sources */,
 				F57F3D0C2AD55A10002C9EC9 /* StartPlaygroundContainerViewControlle.swift in Sources */,
+				8485EEF12ADC67BE00650698 /* StartCoordinator.swift in Sources */,
 				F5B25CED2AD2208200C6815B /* CountryModel.swift in Sources */,
 				8448933C2AD427A000EF8FD2 /* SplashPresenter.swift in Sources */,
 				F5B25D102AD2236000C6815B /* GameOverView.swift in Sources */,

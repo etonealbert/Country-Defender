@@ -10,7 +10,8 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
-    
+    var appCoordinator: AppCoordinator?
+
     private var splashPresenter: SplashPresenterDescription? = SplashPresenter()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -23,6 +24,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 self?.splashPresenter = nil
             })
         }
+        //MARK: Setup Coordinator
+        let navigationController = UINavigationController()
+        appCoordinator = AppCoordinator(navigationController: navigationController)
+        appCoordinator?.start()
+        window?.windowScene = scene
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
