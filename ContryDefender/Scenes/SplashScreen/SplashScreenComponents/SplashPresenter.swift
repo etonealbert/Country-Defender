@@ -51,7 +51,6 @@ final class SplashPresenter: SplashPresenterDescription {
             // Animation finish point
             guard let oldLabelCenterYConstraint = splashViewController?.labelCenterYConstraint.multiplier else { return }
             let newLabelCenterYConstraint = splashViewController?.labelCenterYConstraint.setMultiplier(oldLabelCenterYConstraint * 0.85)
-            
             guard let oldScaleLogoConstraint = splashViewController?.scaleLogoConstraint.multiplier else { return }
             let newScaleLogoConstraint = splashViewController?.scaleLogoConstraint.setMultiplier(oldScaleLogoConstraint * 0.85)
             

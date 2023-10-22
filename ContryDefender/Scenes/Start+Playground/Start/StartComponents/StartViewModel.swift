@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+protocol StartNavigation: AnyObject {
+    
+}
+
+class StartViewModel {
+    
+    weak var navigation: StartNavigation!
+    
+    init(navigation : StartNavigation) {
+        self.navigation = navigation
+    }
+    
+}
